@@ -17,9 +17,6 @@ class UserRepository implements IUserRepository {
   Future<UserModel?> getUser(String id) async {
     final res = await _appService.get(
       '$_path/$id',
-      customErrorCatch: (error) {
-        throw error.response!;
-      },
     );
     if (res.isSuccess) {
       var userJsonData = res.data;

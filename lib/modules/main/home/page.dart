@@ -96,13 +96,14 @@ class HomePage extends GetView<HomeController> {
             child: const Icon(
               Icons.favorite,
               color: Colors.red,
+              size: 26,
             ),
           ),
           16.horizontalSpace,
           Expanded(
             child: Text(
               'Make The World More Meaningful',
-              style: _textTheme.titleMedium?.bold.textWhite,
+              style: _textTheme.titleLarge?.bold.textWhite,
             ),
           )
         ],
